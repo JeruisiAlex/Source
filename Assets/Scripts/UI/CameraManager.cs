@@ -13,11 +13,11 @@ public class CameraManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            StartCoroutine(RotateLittleAngle(-45, 0.2f));
+            StartCoroutine(RotateLittleAngle(45, 0.2f));
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            StartCoroutine(RotateLittleAngle(45, 0.2f));
+            StartCoroutine(RotateLittleAngle(-45, 0.2f));
         }
     }
 
