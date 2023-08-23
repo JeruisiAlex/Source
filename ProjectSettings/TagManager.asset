@@ -7,6 +7,8 @@ TagManager:
   - Mobile
   - Manager
   - ChangeScene
+  - NPC
+  - Door
   layers:
   - Default
   - TransparentFX
