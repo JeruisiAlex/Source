@@ -7,27 +7,58 @@ public class JumpScene : MonoBehaviour
     private Move2D m2;
     private Move m;
     private CameraManager cameraManager;
-    private Vector3 streetPos = new Vector3(987.66f, 0.46f, 999);
+    public Vector3 newPos = new Vector3(987.66f, 0.46f, 999);
     private GameObject mainCamera;
+    public Animator animator;
+    public bool isTOEM = false;
 
     private void Start()
     {
-        m = gameObject.GetComponent<Move>();
-        m2 = gameObject.GetComponent<Move2D>();
-        cameraManager = gameObject.GetComponent<CameraManager>();
+        m = GameObject.FindWithTag("Player").GetComponent<Move>();
+        m2 = GameObject.FindWithTag("Player").GetComponent<Move2D>();
+        cameraManager = GameObject.FindWithTag("Player").GetComponent<CameraManager>();
         mainCamera = GameObject.FindWithTag("MainCamera");
     }
     private void OnCollisionEnter(Collision collision)
     {
-        //跳转至街道
-        if(collision.gameObject.tag== "ChangeScene")
+        //跳转至新场景
+        if(collision.gameObject.tag== "Player")
+        {
+            LoadNextScene();
+        }
+    }
+
+    private void LoadNextScene()
+    {
+        StartCoroutine(LoadScene());
+    }
+
+    IEnumerator LoadScene()
+    {
+        animator.SetTrigger("Start");
+
+        yield return new WaitForSeconds(1);
+
+        animator.SetTrigger("Start");
+
+        if (isTOEM)
+        {
+            m.enabled = true;
+            m2.enabled = false;
+            cameraManager.enabled = true;
+            mainCamera.GetComponent<Transform>().localPosition = new Vector3(0, 8, -3);
+            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(45, 0, 0);
+        }
+        else
         {
             m.enabled = false;
             m2.enabled = true;
             cameraManager.enabled = false;
-            transform.position = streetPos;
             mainCamera.GetComponent<Transform>().localPosition = new Vector3(0, 4.5f, -3);
             mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(17, 0, 0);
         }
+
+        GameObject.FindWithTag("Player").transform.position = newPos;
+
     }
 }
