@@ -11,6 +11,7 @@ public class JumpScene : MonoBehaviour
     private GameObject mainCamera;
     public Animator animator;
     public bool isTOEM = false;
+    public GameObject F;
 
     private void Start()
     {
@@ -19,13 +20,19 @@ public class JumpScene : MonoBehaviour
         cameraManager = GameObject.FindWithTag("Player").GetComponent<CameraManager>();
         mainCamera = GameObject.FindWithTag("MainCamera");
     }
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerStay(Collider other)
     {
-        //跳转至新场景
-        if(collision.gameObject.tag== "Player")
+        F.SetActive(true);
+        if(other.gameObject.tag== "Player" && Input.GetKeyDown(KeyCode.F))
         {
             LoadNextScene();
         }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        F.SetActive(false);
     }
 
     private void LoadNextScene()
