@@ -57,8 +57,8 @@ public class JumpScene : MonoBehaviour
         {
             m.enabled = false;
             m2.enabled = true;
-            mainCamera.GetComponent<Transform>().localPosition = new Vector3(5, 0, -15);
-            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(10, 0, 0);
+            mainCamera.GetComponent<Transform>().localPosition = new Vector3(5, 7, -15);
+            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(15, 0, 0);
         }
 
         GameObject.FindWithTag("Player").transform.position = newPos;
