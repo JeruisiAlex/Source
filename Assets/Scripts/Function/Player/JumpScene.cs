@@ -6,8 +6,7 @@ public class JumpScene : MonoBehaviour
 {
     private Move2D m2;
     private Move m;
-    private CameraManager cameraManager;
-    public Vector3 newPos = new Vector3(987.66f, 0.46f, 999);
+    public Vector3 newPos = new Vector3(995f, 0.7f, 999);
     private GameObject mainCamera;
     public Animator animator;
     public bool isTOEM = false;
@@ -17,8 +16,7 @@ public class JumpScene : MonoBehaviour
     {
         m = GameObject.FindWithTag("Player").GetComponent<Move>();
         m2 = GameObject.FindWithTag("Player").GetComponent<Move2D>();
-        cameraManager = GameObject.FindWithTag("Player").GetComponent<CameraManager>();
-        mainCamera = GameObject.FindWithTag("MainCamera");
+        mainCamera = GameObject.Find("MainCamera");
     }
 
     private void OnTriggerStay(Collider other)
@@ -52,7 +50,6 @@ public class JumpScene : MonoBehaviour
         {
             m.enabled = true;
             m2.enabled = false;
-            cameraManager.enabled = true;
             mainCamera.GetComponent<Transform>().localPosition = new Vector3(0, 8, -3);
             mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(45, 0, 0);
         }
@@ -60,9 +57,8 @@ public class JumpScene : MonoBehaviour
         {
             m.enabled = false;
             m2.enabled = true;
-            cameraManager.enabled = false;
-            mainCamera.GetComponent<Transform>().localPosition = new Vector3(0, 4.5f, -3);
-            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(17, 0, 0);
+            mainCamera.GetComponent<Transform>().localPosition = new Vector3(5, 0, -15);
+            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(10, 0, 0);
         }
 
         GameObject.FindWithTag("Player").transform.position = newPos;

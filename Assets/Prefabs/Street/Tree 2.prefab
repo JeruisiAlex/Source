@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1042369969862122287}
   - component: {fileID: 9057021606661335200}
   m_Layer: 0
-  m_Name: House
+  m_Name: Tree 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 529320030, guid: 28c50e0819eea494cbe09e4155c8aea0, type: 3}
+  m_Sprite: {fileID: 840530094, guid: 1826e92d3d7c6584086fd7b5aa135a90, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
