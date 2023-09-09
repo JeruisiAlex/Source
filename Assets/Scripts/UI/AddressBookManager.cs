@@ -14,8 +14,9 @@ public class AddressBookManager : MonoBehaviour
 
     public void ReturnToUI(GameObject Page)
     {
-        addressBookUI.SetActive(true );
         Page.SetActive(false);
+        addressBookUI.SetActive(true);
+        
     }
 
 }

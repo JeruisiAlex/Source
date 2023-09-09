@@ -53,4 +53,11 @@ public class JumpToAPP : MonoBehaviour
         Memorandum.SetActive(true);
         open.number = 6;
     }
+
+    public void ReturnToMobile(GameObject UI)
+    {
+        Mobile.SetActive (true);
+        UI.SetActive(false);
+        open.number = 0;
+    }
 }
