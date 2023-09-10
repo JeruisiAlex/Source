@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class JumpScene : MonoBehaviour
@@ -11,6 +12,9 @@ public class JumpScene : MonoBehaviour
     public Animator animator;
     public bool isTOEM = false;
     public GameObject F;
+    public TextMeshProUGUI text;
+    public string sceneName;
+    public bool isOpen = true;
 
     private void Start()
     {
@@ -22,7 +26,8 @@ public class JumpScene : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         F.SetActive(true);
-        if(other.gameObject.tag== "Player" && Input.GetKeyDown(KeyCode.F))
+        text.text = "°´F½øÈë" + sceneName; 
+        if(isOpen==true&&other.gameObject.tag== "Player" && Input.GetKeyDown(KeyCode.F))
         {
             LoadNextScene();
         }
@@ -50,8 +55,8 @@ public class JumpScene : MonoBehaviour
         {
             m.enabled = true;
             m2.enabled = false;
-            mainCamera.GetComponent<Transform>().localPosition = new Vector3(0, 8, -3);
-            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(45, 0, 0);
+            mainCamera.GetComponent<Transform>().localPosition = new Vector3(0, 8, -18);
+            mainCamera.GetComponent<Transform>().localEulerAngles = new Vector3(2, 0, 0);
         }
         else
         {

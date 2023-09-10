@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2a95ea6a0640f324dadccd736a25ddc2
+guid: deff159f7d4f3404f840b8abbf6728e1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,22 +105,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Circle_0
+      name: "\u4E3B\u89D2_0"
       rect:
         serializedVersion: 2
-        x: 351
-        y: 227
-        width: 978
-        height: 975
+        x: 758
+        y: 522
+        width: 579
+        height: 1560
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a7077ef6e014214ba527d1e0e0b983f
-      internalID: -1404334546
+      spriteID: 4508384fd0e0c3b4ebd7fb3c90287533
+      internalID: -425785978
       vertices: []
       indices: 
       edges: []
@@ -128,7 +128,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 4ee54ded717318d4fa8e4f0ba76822d5
     internalID: 0
     vertices: []
     indices: 
@@ -136,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Circle_0: -1404334546
+      "\u4E3B\u89D2_0": -425785978
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
