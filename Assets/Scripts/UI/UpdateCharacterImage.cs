@@ -56,13 +56,15 @@ public class UpdateCharacterImage : MonoBehaviour
         {
             Librarian1 .SetActive(false);
             Librarian2 .SetActive(true);
+            Librarian3.SetActive(false);
+            Librarian4.SetActive(true);
         }
         else if(name == "Bartender")
         {
             Bartender1 .SetActive(false);
             Bartender2 .SetActive(true);
-            Librarian3 .SetActive(false);
-            Librarian4 .SetActive(true);
+            Bartender3 .SetActive(false);
+            Bartender4 .SetActive(true);
         }
         else if (name == "Knight")
         {
