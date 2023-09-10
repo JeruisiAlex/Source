@@ -24,51 +24,51 @@ public class DialogControl : MonoBehaviour
         addnpc.UpdateImage(npcname);
         if(npcname == "LeiQieEr")
         {
-
+            LeiQieEr.text = "1";
         }
         else if (npcname == "WuWenZhong")
         {
-
+            WuWenZhong.text = "1";
         }
         else if (npcname == "LiuSanQiang")
         {
-
+            LiuSanQiang.text = "1";
         }
         else if (npcname == "LiJianGuo")
         {
-
+            LiJianGuo.text = "1";
         }
         else if (npcname == "AZheng")
         {
-
+            AZheng.text = "1";
         }
         else if (npcname == "BookstoreBoss")
         {
-
+            BookstoreBoss.text = "1";
         }
         else if (npcname == "Librarian")
         {
-
+            Librarian.text = "1";
         }
         else if (npcname == "Bartender")
         {
-
+            Bartender.text = "1";
         }
         else if (npcname == "Knight")
         {
-
+            Knight.text = "1";
         }
         else if (npcname == "Princess")
         {
-
+            Princess.text = "1";
         }
         else if (npcname == "Dragon")
         {
-
+            Dragon.text = "1";
         }
         else if (npcname == "Teacher Liu")
         {
-
+            Teacher.text = "1";
         }
     }
 
