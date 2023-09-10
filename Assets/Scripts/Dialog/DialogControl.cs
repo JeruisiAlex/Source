@@ -1,22 +1,75 @@
 using Fungus;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class DialogControl : MonoBehaviour
 {
+    public TextMeshProUGUI LeiQieEr, WuWenZhong, LiuSanQiang, LiJianGuo, AZheng, BookstoreBoss, Librarian, Bartender, Knight, Princess, Dragon, Teacher;
     private GameObject ob;
     private Flowchart f;
+    private UpdateCharacterImage addnpc;
     // Start is called before the first frame update
     void Start()
     {
         f = GetComponent<Flowchart>();
-        ob = GameObject.Find("");
+        ob = GameObject.Find("CYZ");
+        addnpc = ob.GetComponent<UpdateCharacterImage>();
     }
 
     public void AddNpc()
     {
         string npcname = f.GetStringVariable("AddNpcName");
+        addnpc.UpdateImage(npcname);
+        if(npcname == "LeiQieEr")
+        {
+
+        }
+        else if (npcname == "WuWenZhong")
+        {
+
+        }
+        else if (npcname == "LiuSanQiang")
+        {
+
+        }
+        else if (npcname == "LiJianGuo")
+        {
+
+        }
+        else if (npcname == "AZheng")
+        {
+
+        }
+        else if (npcname == "BookstoreBoss")
+        {
+
+        }
+        else if (npcname == "Librarian")
+        {
+
+        }
+        else if (npcname == "Bartender")
+        {
+
+        }
+        else if (npcname == "Knight")
+        {
+
+        }
+        else if (npcname == "Princess")
+        {
+
+        }
+        else if (npcname == "Dragon")
+        {
+
+        }
+        else if (npcname == "Teacher Liu")
+        {
+
+        }
     }
 
     public void AddMemorandum()
