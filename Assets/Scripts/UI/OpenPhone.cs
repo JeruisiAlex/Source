@@ -37,8 +37,10 @@ public class OpenPhone : MonoBehaviour
             }
             else if(number == 3)
             {
+                Log.GetComponent<Animator>().SetTrigger("RotateEnd");
                 Log.SetActive(false);
-                number= -1;
+                number = -1;
+
             }
             else if(number == 4)
             {
@@ -57,4 +59,5 @@ public class OpenPhone : MonoBehaviour
             }
         }
     }
+
 }
