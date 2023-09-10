@@ -6,6 +6,7 @@ using XCharts.Runtime;
 public class JumpToAPP : MonoBehaviour
 {
     public GameObject Navigation, AddressBook, Log, Setting, Guide, Memorandum,Mobile;
+    public Animator logAnimator;
     private OpenPhone open;
 
     private void Start()
@@ -30,6 +31,7 @@ public class JumpToAPP : MonoBehaviour
     {
         Mobile.SetActive(false);
         Log.SetActive(true);
+        logAnimator.SetTrigger("RotateStart");
         open.number = 3;
     }
 
@@ -56,8 +58,24 @@ public class JumpToAPP : MonoBehaviour
 
     public void ReturnToMobile(GameObject UI)
     {
-        Mobile.SetActive (true);
-        UI.SetActive(false);
+        if(UI.name != "Log")
+        {
+            Mobile.SetActive(true);
+            UI.SetActive(false);
+        }
+        else
+        {
+            Log.GetComponent<Animator>().SetTrigger("RotateEnd");
+            StartCoroutine(CloseLog(UI));
+        }
         open.number = 0;
     }
+
+    IEnumerator CloseLog(GameObject Log)
+    {
+        yield return new WaitForSeconds(1);
+        Mobile.SetActive(true);
+        Log.SetActive(false);
+    }
+
 }
