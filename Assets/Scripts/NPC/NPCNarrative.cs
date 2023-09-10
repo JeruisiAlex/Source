@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using TMPro;
 
 public class NPCNarrative : MonoBehaviour
 {
@@ -9,6 +10,9 @@ public class NPCNarrative : MonoBehaviour
     [Header("npcName为当前npc的名字,dialogTag为需要与这个人物对话的人的tag")]
     public string npcName;
     public string dialogTag = "Player";
+    public GameObject obj;
+    public TextMeshProUGUI nameText;
+    public string name1;
     private Flowchart flowchart;
     private bool canSsy;
     void Start()
@@ -41,6 +45,8 @@ public class NPCNarrative : MonoBehaviour
         if (other.tag.Equals(dialogTag))
         {
             canSsy = true;
+            obj.SetActive(true);
+            nameText.text = name1;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -48,6 +54,7 @@ public class NPCNarrative : MonoBehaviour
         if (other.tag.Equals(dialogTag))
         {
             canSsy = false;
+            obj.SetActive(false);
         }
     }
 }
