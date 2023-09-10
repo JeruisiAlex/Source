@@ -40313,53 +40313,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LeiQieEr1: {fileID: 629144262}
-  LeiQieEr2: {fileID: 0}
-  WuWenZhong1: {fileID: 0}
-  WuWenZhong2: {fileID: 0}
-  LiuSanQiang1: {fileID: 0}
-  LiuSanQiang2: {fileID: 0}
-  LiJianGuo1: {fileID: 0}
-  LiJianGuo2: {fileID: 0}
-  AZheng1: {fileID: 0}
-  AZheng2: {fileID: 0}
-  BookstoreBoss1: {fileID: 0}
-  BookstoreBoss2: {fileID: 0}
-  Librarian1: {fileID: 0}
-  Librarian2: {fileID: 0}
-  Bartender1: {fileID: 0}
-  Bartender2: {fileID: 0}
-  Knight1: {fileID: 0}
-  Knight2: {fileID: 0}
-  Princess1: {fileID: 0}
-  Princess2: {fileID: 0}
-  Dragon1: {fileID: 0}
-  Dragon2: {fileID: 0}
-  TeacherLiu1: {fileID: 0}
-  TeacherLiu2: {fileID: 0}
-  LeiQieEr3: {fileID: 0}
-  LeiQieEr4: {fileID: 0}
-  WuWenZhong3: {fileID: 0}
-  WuWenZhong4: {fileID: 0}
-  LiuSanQiang3: {fileID: 0}
-  LiuSanQiang4: {fileID: 0}
-  LiJianGuo3: {fileID: 0}
-  LiJianGuo4: {fileID: 0}
-  AZheng3: {fileID: 0}
-  AZheng4: {fileID: 0}
-  BookstoreBoss3: {fileID: 0}
-  BookstoreBoss4: {fileID: 0}
-  Librarian3: {fileID: 0}
-  Librarian4: {fileID: 0}
-  Bartender3: {fileID: 0}
-  Bartender4: {fileID: 0}
-  Knight3: {fileID: 0}
-  Knight4: {fileID: 0}
-  Princess3: {fileID: 0}
-  Princess4: {fileID: 0}
-  Dragon3: {fileID: 0}
-  Dragon4: {fileID: 0}
-  TeacherLiu3: {fileID: 0}
-  TeacherLiu4: {fileID: 0}
+  LeiQieEr2: {fileID: 627877435}
+  WuWenZhong1: {fileID: 1910813919}
+  WuWenZhong2: {fileID: 1588694008}
+  LiuSanQiang1: {fileID: 853163435}
+  LiuSanQiang2: {fileID: 870020479}
+  LiJianGuo1: {fileID: 2131286606}
+  LiJianGuo2: {fileID: 252418772}
+  AZheng1: {fileID: 1692149169}
+  AZheng2: {fileID: 359875992}
+  BookstoreBoss1: {fileID: 1936851556}
+  BookstoreBoss2: {fileID: 53509073}
+  Librarian1: {fileID: 642326562}
+  Librarian2: {fileID: 1299069823}
+  Bartender1: {fileID: 1038301097}
+  Bartender2: {fileID: 1770847524}
+  Knight1: {fileID: 1427565061}
+  Knight2: {fileID: 354398149}
+  Princess1: {fileID: 479486064}
+  Princess2: {fileID: 1930511875}
+  Dragon1: {fileID: 757853167}
+  Dragon2: {fileID: 313032714}
+  TeacherLiu1: {fileID: 278935447}
+  TeacherLiu2: {fileID: 1139564400}
+  LeiQieEr3: {fileID: 256062649}
+  LeiQieEr4: {fileID: 1895336120}
+  WuWenZhong3: {fileID: 1819771569}
+  WuWenZhong4: {fileID: 1679913797}
+  LiuSanQiang3: {fileID: 1828085583}
+  LiuSanQiang4: {fileID: 1045725008}
+  LiJianGuo3: {fileID: 42944083}
+  LiJianGuo4: {fileID: 1420720444}
+  AZheng3: {fileID: 362552508}
+  AZheng4: {fileID: 368533429}
+  BookstoreBoss3: {fileID: 733882118}
+  BookstoreBoss4: {fileID: 66076172}
+  Librarian3: {fileID: 1959820790}
+  Librarian4: {fileID: 1439229687}
+  Bartender3: {fileID: 1893182742}
+  Bartender4: {fileID: 1853056354}
+  Knight3: {fileID: 95549362}
+  Knight4: {fileID: 239125375}
+  Princess3: {fileID: 1107101933}
+  Princess4: {fileID: 611021716}
+  Dragon3: {fileID: 1060644693}
+  Dragon4: {fileID: 1764521182}
+  TeacherLiu3: {fileID: 1212445348}
+  TeacherLiu4: {fileID: 1070556026}
 --- !u!114 &755284821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40372,10 +40372,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51a5018e7e173e94992f4c7af7c62ab4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MoneyText: {fileID: 0}
-  DayText: {fileID: 0}
-  WeekText: {fileID: 0}
-  lineChart: {fileID: 0}
+  MoneyText: {fileID: 554084974}
+  DayText: {fileID: 1977927923}
+  WeekText: {fileID: 1171364939}
+  lineChart: {fileID: 8519803}
 --- !u!4 &755284822
 Transform:
   m_ObjectHideFlags: 0
