@@ -7,7 +7,7 @@ using UnityEngine;
 public class DontMoveOnDialog : MonoBehaviour
 {
     private Flowchart flowchart;
-    private bool isTOEM;
+    public bool isTOEM;
     private Boolean isDialog;
 
     private void Start()
@@ -18,20 +18,18 @@ public class DontMoveOnDialog : MonoBehaviour
     {
         isDialog = flowchart.GetBooleanVariable("isDialog");
         if (isDialog)
-        {
-            isTOEM = JudgeTheScene();
+        { 
             StopMovingOrRotating();
         }
         else
         {
-            isTOEM = JudgeTheScene();
             ContinueMovingAndRotating();
         }
     }
 
     private bool JudgeTheScene()
     {
-        return gameObject.GetComponent<Move>().isActiveAndEnabled;
+        return gameObject.GetComponent<Move>().enabled;
     }
 
     private void StopMovingOrRotating()
@@ -52,10 +50,12 @@ public class DontMoveOnDialog : MonoBehaviour
         if (isTOEM)
         {
             gameObject.GetComponent<Move>().enabled = true;
+            gameObject.GetComponent<Move2D>().enabled = false;
         }
         else
         {
             gameObject.GetComponent<Move2D>().enabled = true;
+            gameObject.GetComponent<Move>().enabled = false;
         }
         gameObject.GetComponent<OpenPhone>().enabled = true;
     }

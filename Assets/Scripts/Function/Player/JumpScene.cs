@@ -72,5 +72,7 @@ public class JumpScene : MonoBehaviour
             GameObject.FindWithTag("Player").transform.localScale= new Vector3(0.09f, 0.09f, 0.1827f);
         }
 
+        GameObject.FindWithTag("Player").GetComponent<DontMoveOnDialog>().isTOEM = isTOEM;
+
     }
 }
