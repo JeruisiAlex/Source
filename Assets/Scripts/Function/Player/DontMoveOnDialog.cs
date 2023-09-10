@@ -31,14 +31,13 @@ public class DontMoveOnDialog : MonoBehaviour
 
     private bool JudgeTheScene()
     {
-        return gameObject.GetComponent<CameraManager>().isActiveAndEnabled;
+        return gameObject.GetComponent<Move>().isActiveAndEnabled;
     }
 
     private void StopMovingOrRotating()
     {
         if (isTOEM)
         {
-            gameObject.GetComponent<CameraManager>().enabled = false;
             gameObject.GetComponent<Move>().enabled = false;
         }
         else
@@ -52,7 +51,6 @@ public class DontMoveOnDialog : MonoBehaviour
     {
         if (isTOEM)
         {
-            gameObject.GetComponent<CameraManager>().enabled = true;
             gameObject.GetComponent<Move>().enabled = true;
         }
         else
